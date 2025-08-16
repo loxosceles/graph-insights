@@ -19,7 +19,7 @@ Knowledge graphs are powerful for scenarios involving **complex relationships** 
 ┌─────────────────┐    ┌──────────────────────┐    ┌─────────────────┐
 │   Demo Scripts  │───▶│  Persistent Client   │───▶│  MCP Server     │
 │                 │    │                      │    │                 │
-│ • demo.py       │    │ • Connection mgmt    │    │ • SQLite backend│
+│ • main.py       │    │ • Connection mgmt    │    │ • SQLite backend│
 │ • project_mgr   │    │ • Query interface    │    │ • Entity storage│
 │ • code_analyzer │    │ • Error handling     │    │ • Relationship  │
 │ • research_asst │    │                      │    │   queries       │
@@ -31,7 +31,7 @@ Knowledge graphs are powerful for scenarios involving **complex relationships** 
 ```
 graph-insights/
 ├── README.md                    # This documentation
-├── demo.py                      # Main demonstration script
+├── main.py                      # Main demonstration script
 ├── persistent_kg_server.py      # MCP server with SQLite backend
 ├── persistent_client.py         # Client for server communication
 ├── project_manager.py           # Project management use case
@@ -321,7 +321,7 @@ def sync_from_jira(self, project_key):
 ps aux | grep persistent_kg_server
 
 # Restart the demo
-python3 demo.py
+python3 main.py
 ```
 
 **Empty Query Results**:
@@ -333,7 +333,7 @@ python3 demo.py
 ```bash
 # Reset database
 rm knowledge_graph.db
-python3 demo.py  # Recreates database
+python3 main.py  # Recreates database
 ```
 
 ## 📚 Further Reading
