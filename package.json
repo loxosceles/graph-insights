@@ -1,0 +1,13 @@
+{
+  "name": "graph-insights",
+  "version": "1.0.0",
+  "description": "Organizational relationship analysis using knowledge graphs",
+  "scripts": {
+    "start": "python main.py",
+    "analyze": "python code_analyzer.py",
+    "research": "python research_assistant.py"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server-sqlite": "^1.0.0"
+  }
+}
